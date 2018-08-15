@@ -76,5 +76,8 @@
     "main": "server.js",
     "repository": "https://github.com/Stoffy92/React-App",
     "author": "Stefan Stoffberg <stoffberg.stefan@gmail.com@gmail.com>",
-    "license": "MIT"
+    "license": "MIT",
+    "engines": {
+    "node": "10.8.0"
+}
 }
