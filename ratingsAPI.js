@@ -6,6 +6,7 @@ const fs = require('fs');
 const buffer = fs.readFileSync('./data.json');
 const showsObj = JSON.parse(buffer);
 const app = express();
+const port = process.env.PORT || 8080;
 app.use(cors());
 const ratedShows = showsObj.shows.map(show =>
   Object.assign({ rating: `${Math.floor(Math.random() * 9)}.${Math.floor(Math.random() * 9)}` }, show)
@@ -22,6 +23,10 @@ app.get('/:id', (req, res) => {
   }
 });
 
-console.log(`Starting server on port 3000`);
+// console.log(`Starting server on port 3000`);
 console.log(`Generating new random ratings`);
-app.listen(3000);
+// app.listen(3000);
+app.listen(port);
+
+
+
