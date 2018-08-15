@@ -23,10 +23,17 @@ app.get('/:id', (req, res) => {
   }
 });
 
-// console.log(`Starting server on port 3000`);
-console.log(`Generating new random ratings`);
-// app.listen(3000);
-app.listen(port);
+
+
+var server = app.listen(process.env.PORT || 8080, function () {
+    var port = server.address().port;
+    console.log("App now running on port", port);
+});
+  
+// // console.log(`Starting server on port 3000`);
+// console.log(`Generating new random ratings`);
+// // app.listen(3000);
+// app.listen(port);
 
 
 
