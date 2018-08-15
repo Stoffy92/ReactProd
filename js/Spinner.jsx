@@ -17,6 +17,7 @@ const Image = styled.img`
 	justify-content: ceneter;
 	animation: ${spin} 4s infinite linear;
 	background-image: url(/public/img/loading.png);
+	display: none; //Bandaid fix for now
 `;
 
 const Spinner = () => <Image src="/public/img/loading.png" alt="loading indicator" />;
