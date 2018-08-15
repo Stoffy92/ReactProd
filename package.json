@@ -9,7 +9,7 @@
         "test:update": "jest -u",
         "test:coverage": "jest --coverage",
         "watch": "webpack --watch",
-        "start": "node server.js"
+        "start": "node server.js && node ratingsAPI.js"
     },
     "jest": {
         "snapshotSerializer": ["jest-serializer-enzyme"]
