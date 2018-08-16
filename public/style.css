@@ -680,7 +680,9 @@ header > input {
   border: 2px solid #ccc;
   border-radius: 4px;
 }
-
+.details-rating {
+  display: none; // Bandaid fix
+}
 .details-img {
   width: 60%;
   -webkit-box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.78);
