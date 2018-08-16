@@ -10,7 +10,7 @@ class Details extends Component {
 		apiData: { rating: '' }
 	};
 	componentDidMount() {
-		axios.get(`https://ratingsapi.herokuapp.com/${this.props.show.imdbID}`).then((response: { data: { rating: string } }) => {
+		axios.get(`${this.props.show.imdbID}`).then((response: { data: { rating: string } }) => {
 			this.setState({ apiData: response.data });
 		});
 	}
