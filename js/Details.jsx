@@ -10,7 +10,7 @@ class Details extends Component {
 		apiData: { rating: '' }
 	};
 	componentDidMount() {
-		axios.get(`${this.props.show.imdbID}`).then((response: { data: { rating: string } }) => {
+		axios.get(`s${this.props.show.imdbID}`).then((response: { data: { rating: string } }) => {
 			this.setState({ apiData: response.data });
 		});
 	}
